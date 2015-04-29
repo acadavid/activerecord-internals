@@ -3,6 +3,9 @@ require 'product'
 
 class ProductTest < MiniTest::Test
   def test_initialize
-    assert true
+    product = Product.new("Laptop", 25)
+
+    assert_equal product.id, 25
+    assert_equal product.name, "Laptop"
   end
 end
